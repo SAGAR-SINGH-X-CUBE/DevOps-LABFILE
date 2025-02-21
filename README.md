@@ -1,6 +1,6 @@
 # DevOps-LABFILE
 
-#LAB-1 GIT COMMANDS
+# LAB-1 GIT COMMANDS
 
 git clone https://github.com/SAGAR-SINGH-X-CUBE/DevOps-LABFILE.git
 ![clone command](./fi.png)
@@ -28,7 +28,7 @@ git push
 
 
 
-#LAB-2 GIT COMMANDS
+# LAB-2 GIT COMMANDS
 *BRANCHING*
 
 
