@@ -183,6 +183,83 @@ Click "Save."
 ![allcommit](./f15.png)
 
 
+#SUBVERSION
+
+
+>CREATE A REPOSITORY
+```bash
+sudo mkdir -p /var/svn/repos
+sudo svnadmin create /var/svn/repos/myrepo
+
+```
+>Confgure SVN Server
+```bash
+sudo nano /var/svn/repos/myrepo/conf/svnserve.conf
+
+```
+
+![allcommit](./f17.png)
+
+```bash
+anon-access = none      # Disable anonymous access
+auth-access = write     # Allow authenticated users to write
+password-db = passwd    # Use the passwd file for authentication
+
+
+```
+![allcommit](./f18.png)
+
+
+
+>SET UP THE USER
+```bash
+sudo nano /var/svn/repos/myrepo/conf/passwd
+
+```
+
+```bash
+alice = alicepassword
+bob = bobpassword
+```
+
+![allcommit](./f19.png)
+
+>START SVNSERVER
+
+```bash
+sudo svnserve -d -r /var/svn/repos
+
+```
+
+>Restart the server
+```bash
+sudo pkill svnserve
+```
+
+```bash
+sudo pkill svnserve
+```
+
+```bash
+cd /path/to/repo/conf/
+cd /var/svn/repos/myrepo/conf/
+svnserve -d -r /var/svn/repos/
+
+```
+
+>CLIENT SIDE
+```bash
+svn checkout svn://localhost/myrepo --username alice
+cd myrepo
+
+echo "Hello, SVN!" > file.txt
+svn add file.txt
+svn commit -m "Added file.txt"
+svn update
+svn status
+svn log
+
+```
 
 
 
