@@ -94,6 +94,96 @@ git log
 ![allcommit](./f8.png)
 
 
+#Merging
+```bash
+git checkout feature1
+git log
+
+```
+
+![allcommit](./f9.png)
+
+Do the comit 3 in feature branch
+```bash
+git add .
+git commit -m "feature done"
+git log
+
+```
+
+![allcommit](./f10.png)
+
+switching to master branch and perform merging
+```bash
+git checkout master
+git merge feature1 -m "Merging featutre 1"
+git log
+
+```
+
+![allcommit](./f11.png)
+
+*RESET*
+```bash
+git reset --hard a462d13e9a
+git log
+``` 
+
+*GIT RESET --HARD:Removed the merge commit 13dd279 and deleted all merged changes.*
+*GIT RESET --SOFT:Would have removed the merge commit but kept changes staged, allowing you to re-commit easily.*
+
+*REBASE*
+
+```bash
+git checkout feature1
+git rebase master
+git log
+``` 
+
+![allcommit](./f12.png)
+
+
+
+#GIT SUBMODULE
+
+CREATE THREE REPO IN GITHUB
+AND CLONE IT TO YOUR PC
+REPO1:MAIN-add index.html file->add->commit->push
+REPO2:CSS-add style.css file->add->commit->push
+REPO3:JS-add script.js file->add->commit->push
+
+
+![allcommit](./f13.png)
+
+open integrated terminal of MAIN repo
+```bash
+git submodule add https://github.com/SAGAR-SINGH-X-CUBE/JS.git css
+git submodule add https://github.com/SAGAR-SINGH-X-CUBE/CSS.git css
+git add .
+git commit -m "submodule added"
+git push
+
+```
+
+![allcommit](./f14.png)
+
+
+
+
+#Hosting Submodule
+Create a repository with the same name as github username
+*SAGAR-SINGH-X-CUBE.github.io*
+Go to your repository: SAGAR-SINGH-X-CUBE.github.io
+Click on "Settings" → "Pages"
+Under "Branch," select main.
+Click "Save."
+
+![allcommit](./f16.png)
+
+![allcommit](./f15.png)
+
+
+
 
 
 
