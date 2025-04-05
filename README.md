@@ -272,6 +272,82 @@ svn log
 
 
 
+# DOCKER
+
+```bash
+docker -v
+
+```
+
+```bash
+docker pull hello-world
+
+```
+
+```bash
+docker images
+
+```
+
+![allcommit](./d1.png)
+
+
+```bash
+docker run hello-world
+```
+
+![allcommit](./d2.png)
+
+```bash
+docker run -it ubuntu
+
+```
+
+![allcommit](./d3.png)
+
+```bash
+docker ps -a
+
+```
+
+![allcommit](./d4.png)
+
+```bash
+docker ps -a
+docker start youthful_yonath
+docker ps
+docker stop b8fe5708c23b
+docker ps
+
+```
+
+![allcommit](./d5.png)
+
+```bash
+docker ps -a
+docker start youthful_yonath
+docker ps
+docker stop b8fe5708c23b
+docker ps
+
+```
+docker rmi hello-world
+docker ps -a
+docker rm 33dc638eb2c4
+docker rmi hello-world
+![allcommit](./d5.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
