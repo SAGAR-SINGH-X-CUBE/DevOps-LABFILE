@@ -46,6 +46,7 @@ To view the current state of your working directory, run:
 To examine the changes you made before committing, use:
 
 `git diff`
+
 ![diff](./f4.png)
 
 
