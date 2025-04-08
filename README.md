@@ -2,8 +2,21 @@
 
 # LAB-1 GIT COMMANDS
 
+
+**This repository contains the practical lab files and exercises related to DevOps, including Git operations and version control demonstrations.**
+
+Cloning the Repository
+To begin, clone this repository using the following command:
+
+```bash
 git clone https://github.com/SAGAR-SINGH-X-CUBE/DevOps-LABFILE.git
+```
+
+
 ![clone command](./fi.png)
+
+**Staging, Committing, and Pushing Changes**
+After making changes to the repository (e.g., editing files, creating new ones), use the following commands to stage, commit, and push those changes:
 
 ```bash
 git add .
@@ -12,17 +25,30 @@ git push
 ```
 
 
+git add . stages all modified and new files.
+
+git commit -m "figure 1" saves the changes with a commit message.
+
+git push uploads the changes to the remote GitHub repository.
+
+
+
 ![add,push,commit](./f2.png)
+
+**Checking the Status of Your Working Directory**
+To view the current state of your working directory, run:
 
 `git status`
 ![status](./f3.png)
 
 
+**Viewing Code Differences**
+To examine the changes you made before committing, use:
+
 `git diff`
 ![diff](./f4.png)
 
 
-> Checking the block code 
 
 
 
