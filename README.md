@@ -38,14 +38,18 @@ git push uploads the changes to the remote GitHub repository.
 **Checking the Status of Your Working Directory**
 To view the current state of your working directory, run:
 
-```bash git status ```
+```bash
+ git status 
+ ```
 ![status](./f3.png)
 
 
 **Viewing Code Differences**
 To examine the changes you made before committing, use:
 
-```bash git diff```
+```bash 
+git diff
+ ```
 
 ![diff](./f4.png)
 
