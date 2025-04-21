@@ -59,8 +59,7 @@ git diff
 
 
 
-# LAB-2 GIT COMMANDS
-*BRANCHING*
+# LAB-2: GIT COMMANDS - BRANCHING, MERGING, RESET, REBASE
 
 
 Create a file and do 3 commits in it
@@ -362,15 +361,69 @@ docker stop b8fe5708c23b
 docker ps
 
 ```
+```bash
 docker rmi hello-world
 docker ps -a
 docker rm 33dc638eb2c4
 docker rmi hello-world
-![allcommit](./d5.png)
+```
+
+```bash
+from fastapi import FastAPI
+import uvicorn
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"name": "Sagar", "Location": "Dehradun"}
+
+@app.get("/{data}")
+def read_data(data: str):
+    return {"hi": data, "Location": "Dehradun"}
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=80, reload=True)
+
+```
+
+
+```bash
+FROM ubuntu
+
+RUN apt update -y
+RUN apt install python3 python3-pip pipenv -y
+
+WORKDIR /app
+COPY . /app/
+RUN pipenv install -r requirements.txt
+
+EXPOSE 80  
+
+CMD pipenv run python3 main.py
+
+
+```
+
+
+![allcommit](./fast1.png)
 
 
 
-# Github Action Automation
+
+
+# FastAPI Application with Docker Containerization
+
+
+
+
+# JENKINS
+
+
+```bash
+docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --restart=on-failure jenkins/jenkins:lts-jdk17
+
+```
 
 
 
@@ -378,18 +431,14 @@ docker rmi hello-world
 
 
 
-# Jenkins
 
-![allcommit](./j1.png)
-![allcommit](./j2.png)
-![allcommit](./j3.png)
-![allcommit](./j4.png)
-![allcommit](./j5.png)
-![allcommit](./j6.png)
-![allcommit](./j7.png)
-![allcommit](./j8.png)
-![allcommit](./j9.png)
-![allcommit](./j10.png)
-![allcommit](./j11.png)
-![allcommit](./j12.png)
-![allcommit](./j13.png)
+
+
+
+
+
+
+
+
+
+
