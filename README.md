@@ -368,6 +368,20 @@ docker rm 33dc638eb2c4
 docker rmi hello-world
 ```
 
+
+# FastAPI Application with Docker Containerization
+
+Purpose:
+
+Created a simple FastAPI app with two routes:
+
+/: Returns name and location.
+
+/{data}: Returns a custom "hi" message with the given data and location.
+
+Used uvicorn to run the FastAPI app on port 80 with auto-reloading enabled.
+
+
 ```bash
 from fastapi import FastAPI
 import uvicorn
@@ -404,6 +418,11 @@ CMD pipenv run python3 main.py
 
 
 ```
+Purpose:
+
+Created a Docker image to run the FastAPI app in a container.
+
+Installs dependencies and runs the app on port 80.
 
 
 ![allcommit](./fast1.png)
@@ -412,7 +431,7 @@ CMD pipenv run python3 main.py
 
 
 
-# FastAPI Application with Docker Containerization
+
 
 
 
