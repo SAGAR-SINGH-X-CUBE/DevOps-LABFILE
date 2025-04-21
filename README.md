@@ -370,6 +370,13 @@ docker rmi hello-world
 
 
 
+# Github Action Automation
+
+
+
+
+
+
 
 # Jenkins
 
@@ -386,23 +393,3 @@ docker rmi hello-world
 ![allcommit](./j11.png)
 ![allcommit](./j12.png)
 ![allcommit](./j13.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
