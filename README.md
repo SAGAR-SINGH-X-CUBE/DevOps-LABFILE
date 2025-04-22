@@ -481,6 +481,29 @@ docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --re
 
 ```
 
+![allcommit](./j1.png)
+
+![allcommit](./j2.png)
+
+![allcommit](./j3.png)
+
+![allcommit](./j4.png)
+
+![allcommit](./j5.png)
+
+![allcommit](./j6.png)
+
+![allcommit](./j7.png)
+
+![allcommit](./j8.png)
+
+![allcommit](./j9.png)
+
+![allcommit](./j10.png)
+
+![allcommit](./j11.png)
+
+![allcommit](./j12.png)
 
 
 
